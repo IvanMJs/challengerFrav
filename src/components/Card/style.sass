@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Abel')
+p
+    margin: 0
+
+.Card
+    background-color: #8BC6EC
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)
+
+    border-radius: 7px
+    box-shadow: 6px 10px 5px rgba(0, 0, 0, 0.1)
+    display: inline-block
+    padding: 15px
+    position: relative
+    width: 300px
+    transition: 0.5s ease-in-out
+    margin-top: 30px
+    height: 50vh
+
+.Card:hover
+    transform: translateY(20px)
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.4)
+
+.Card .Card__info
+    position: absolute
+    margin-left: auto
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 100px
+    padding: 12px
+    background: #ff0066
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4)
+    box-sizing: border-box
+    overflow: hidden
+    border-radius: 7px
+
+.Card__info h1  
+    color: white
+.Card__name
+    color: white
+
+.Card:hover .Card__info
+    width: 100%
+    height: 75%
+    left: 0
+    bottom: 0
+
+
+.Card__info p
+    transform: translateY(2em)
+    transform: translateY(2em)
+    transition: 0.3s
+    line-height: 1.3em
+    transition: 0.3s
+    opacity: 0
+
+.Card:hover .Card__info p
+    transform: translateY(0)
+    opacity: 1
+
+.Card__img
+    text-align: center
+
+.Card__types
+    display: flex
+    justify-content: center
+    font-family: Abel, Arial, Verdana, sans-serif
+
+.Card__type
+    padding: 5px 10px
+    margin: 10px 10px 10px 0
+    border-radius: 20px
+    background: #0e9494
+    color: #fff
+
+.Card__name
+    text-align: center
+    text-transform: capitalize
+    font-weight: 800
+
+.Card__info
+    margin-left: 10px
+    text-align: center
+    font-family: Abel, Arial, Verdana, sans-serif
+
+.Card__data .title
+    font-weight: 700
