@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Challenger
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Challenger hecho con React y Sass, Se consulta una api de pokemon y se muestra los datos con hover effects en los buttons y en las card para darle una agradable impresión!
 
 ## Available Scripts
 
