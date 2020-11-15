@@ -1,0 +1,12 @@
+{
+    "card":{
+        "weight": "Peso",
+        "ability": "Habilidad",
+        "height": "Altura",
+        "description":"Descripción",
+        "loading": "Cargando...",
+        "next":"Siguiente",
+        "previous":"Anterior"
+    }
+    
+}

@@ -1,0 +1,12 @@
+{
+    "card":{
+        "weight": "Weight",
+        "ability": "Ability",
+        "height": "Height",
+        "description":"Description",
+        "loading": "Loading...",
+        "next":"Next",
+        "previous":"Previous"
+    }
+    
+}

@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/navbar";
 import Card from "./components/Card/card";
 import { getPokemon, getAllPokemon } from "./services/get";
 import "./App.sass";
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -10,6 +11,7 @@ function App() {
   const [prevUrl, setPrevUrl] = useState("");
   const [loading, setLoading] = useState(true);
   const initialURL = "https://pokeapi.co/api/v2/pokemon?limit=5&offset=200";
+  const [t, i18n] = useTranslation("global");
 
   useEffect(() => {
     async function fetchData() {
@@ -56,7 +58,7 @@ function App() {
       <Navbar />
       <div>
         {loading ? (
-          <h1 style={{ textAlign: "center" }}>Cargando...</h1>
+          <h1 style={{ textAlign: "center" }}>{t("card.loading")}</h1>
         ) : (
           <>
             <div className="grid-container">
@@ -66,10 +68,10 @@ function App() {
             </div>
             <div class="container">
               <button onClick={prev} class="button type3">
-                Anterior
+              {t("card.previous")}
               </button>
               <button onClick={next} class="button type1">
-                Siguiente
+              {t("card.next")}
               </button>
             </div>
           </>
